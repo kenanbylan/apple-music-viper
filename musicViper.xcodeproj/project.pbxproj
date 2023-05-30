@@ -1,0 +1,844 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E03BD261349E0558A19B4CF /* Pods_musicViper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C27A902A3E50FCCFC8F59881 /* Pods_musicViper.framework */; };
+		6EAD07E42A26111F00441420 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAD07E32A26111F00441420 /* AppDelegate.swift */; };
+		6EAD07E62A26111F00441420 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAD07E52A26111F00441420 /* SceneDelegate.swift */; };
+		6EAD07E82A26111F00441420 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAD07E72A26111F00441420 /* ViewController.swift */; };
+		6EAD07EB2A26111F00441420 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EAD07E92A26111F00441420 /* Main.storyboard */; };
+		6EAD07ED2A26112000441420 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EAD07EC2A26112000441420 /* Assets.xcassets */; };
+		6EAD07F02A26112000441420 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EAD07EE2A26112000441420 /* LaunchScreen.storyboard */; };
+		6EAD07FB2A26112000441420 /* musicViperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAD07FA2A26112000441420 /* musicViperTests.swift */; };
+		6EAD08052A26112000441420 /* musicViperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAD08042A26112000441420 /* musicViperUITests.swift */; };
+		6EAD08072A26112000441420 /* musicViperUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAD08062A26112000441420 /* musicViperUITestsLaunchTests.swift */; };
+		6EAD081E2A26117E00441420 /* music.json in Resources */ = {isa = PBXBuildFile; fileRef = 6EAD081C2A26117E00441420 /* music.json */; };
+		6EAD081F2A26117E00441420 /* music.json in Resources */ = {isa = PBXBuildFile; fileRef = 6EAD081C2A26117E00441420 /* music.json */; };
+		6EAD08272A2611C200441420 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAD08242A2611C200441420 /* Music.swift */; };
+		6EAD08282A2611C200441420 /* Decoders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAD08262A2611C200441420 /* Decoders.swift */; };
+		6EAD082C2A261BD100441420 /* TopMusicResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAD082B2A261BD100441420 /* TopMusicResponse.swift */; };
+		6EAD08302A261EB400441420 /* TopMusicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAD082F2A261EB400441420 /* TopMusicService.swift */; };
+		6EAD08322A261F4700441420 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAD08312A261F4700441420 /* Result.swift */; };
+		82CD60A5F982A91D0D30A50D /* Pods_musicViper_musicViperUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DA17C6275FBD55E143BDA74 /* Pods_musicViper_musicViperUITests.framework */; };
+		A8059370D6DA4361D544F42F /* Pods_musicViperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6102E782DFBE31332E5B24B4 /* Pods_musicViperTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6EAD07F72A26112000441420 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EAD07D82A26111F00441420 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6EAD07DF2A26111F00441420;
+			remoteInfo = musicViper;
+		};
+		6EAD08012A26112000441420 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EAD07D82A26111F00441420 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6EAD07DF2A26111F00441420;
+			remoteInfo = musicViper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		41EEE11817F117B691E67A40 /* Pods-musicViper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-musicViper.release.xcconfig"; path = "Target Support Files/Pods-musicViper/Pods-musicViper.release.xcconfig"; sourceTree = "<group>"; };
+		4A3D507E1C066E1388C6C3AD /* Pods-musicViperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-musicViperTests.release.xcconfig"; path = "Target Support Files/Pods-musicViperTests/Pods-musicViperTests.release.xcconfig"; sourceTree = "<group>"; };
+		6102E782DFBE31332E5B24B4 /* Pods_musicViperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_musicViperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EAD07E02A26111F00441420 /* musicViper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = musicViper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EAD07E32A26111F00441420 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6EAD07E52A26111F00441420 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6EAD07E72A26111F00441420 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6EAD07EA2A26111F00441420 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6EAD07EC2A26112000441420 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6EAD07EF2A26112000441420 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6EAD07F12A26112000441420 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EAD07F62A26112000441420 /* musicViperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = musicViperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EAD07FA2A26112000441420 /* musicViperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = musicViperTests.swift; sourceTree = "<group>"; };
+		6EAD08002A26112000441420 /* musicViperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = musicViperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EAD08042A26112000441420 /* musicViperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = musicViperUITests.swift; sourceTree = "<group>"; };
+		6EAD08062A26112000441420 /* musicViperUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = musicViperUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6EAD081C2A26117E00441420 /* music.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = music.json; sourceTree = "<group>"; };
+		6EAD08242A2611C200441420 /* Music.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		6EAD08262A2611C200441420 /* Decoders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decoders.swift; sourceTree = "<group>"; };
+		6EAD082B2A261BD100441420 /* TopMusicResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMusicResponse.swift; sourceTree = "<group>"; };
+		6EAD082F2A261EB400441420 /* TopMusicService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMusicService.swift; sourceTree = "<group>"; };
+		6EAD08312A261F4700441420 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		7DA17C6275FBD55E143BDA74 /* Pods_musicViper_musicViperUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_musicViper_musicViperUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B8855BD16AE497970242A20 /* Pods-musicViper-musicViperUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-musicViper-musicViperUITests.debug.xcconfig"; path = "Target Support Files/Pods-musicViper-musicViperUITests/Pods-musicViper-musicViperUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AD21060E391DB5B62B9BE7BF /* Pods-musicViper-musicViperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-musicViper-musicViperUITests.release.xcconfig"; path = "Target Support Files/Pods-musicViper-musicViperUITests/Pods-musicViper-musicViperUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B5F1E9EB810920EB8FCCB9BA /* Pods-musicViper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-musicViper.debug.xcconfig"; path = "Target Support Files/Pods-musicViper/Pods-musicViper.debug.xcconfig"; sourceTree = "<group>"; };
+		C27A902A3E50FCCFC8F59881 /* Pods_musicViper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_musicViper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0472D222822A1F4DB51A6DB /* Pods-musicViperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-musicViperTests.debug.xcconfig"; path = "Target Support Files/Pods-musicViperTests/Pods-musicViperTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6EAD07DD2A26111F00441420 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E03BD261349E0558A19B4CF /* Pods_musicViper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EAD07F32A26112000441420 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8059370D6DA4361D544F42F /* Pods_musicViperTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EAD07FD2A26112000441420 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82CD60A5F982A91D0D30A50D /* Pods_musicViper_musicViperUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D344D96B66C70A2348709CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C27A902A3E50FCCFC8F59881 /* Pods_musicViper.framework */,
+				7DA17C6275FBD55E143BDA74 /* Pods_musicViper_musicViperUITests.framework */,
+				6102E782DFBE31332E5B24B4 /* Pods_musicViperTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6EAD07D72A26111F00441420 = {
+			isa = PBXGroup;
+			children = (
+				6EAD07E22A26111F00441420 /* musicViper */,
+				6EAD07F92A26112000441420 /* musicViperTests */,
+				6EAD08032A26112000441420 /* musicViperUITests */,
+				6EAD07E12A26111F00441420 /* Products */,
+				99087A43F79D491126BFB3BA /* Pods */,
+				4D344D96B66C70A2348709CD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6EAD07E12A26111F00441420 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6EAD07E02A26111F00441420 /* musicViper.app */,
+				6EAD07F62A26112000441420 /* musicViperTests.xctest */,
+				6EAD08002A26112000441420 /* musicViperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6EAD07E22A26111F00441420 /* musicViper */ = {
+			isa = PBXGroup;
+			children = (
+				6EAD08222A2611C200441420 /* Network */,
+				6EAD082E2A261E9E00441420 /* Scene */,
+				6EAD07E32A26111F00441420 /* AppDelegate.swift */,
+				6EAD07E52A26111F00441420 /* SceneDelegate.swift */,
+				6EAD07E72A26111F00441420 /* ViewController.swift */,
+				6EAD07E92A26111F00441420 /* Main.storyboard */,
+				6EAD07EC2A26112000441420 /* Assets.xcassets */,
+				6EAD07EE2A26112000441420 /* LaunchScreen.storyboard */,
+				6EAD07F12A26112000441420 /* Info.plist */,
+			);
+			path = musicViper;
+			sourceTree = "<group>";
+		};
+		6EAD07F92A26112000441420 /* musicViperTests */ = {
+			isa = PBXGroup;
+			children = (
+				6EAD08292A261A4800441420 /* Network */,
+			);
+			path = musicViperTests;
+			sourceTree = "<group>";
+		};
+		6EAD08032A26112000441420 /* musicViperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6EAD08042A26112000441420 /* musicViperUITests.swift */,
+				6EAD08062A26112000441420 /* musicViperUITestsLaunchTests.swift */,
+			);
+			path = musicViperUITests;
+			sourceTree = "<group>";
+		};
+		6EAD081B2A26117E00441420 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6EAD081C2A26117E00441420 /* music.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6EAD08222A2611C200441420 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				6EAD082A2A261BBB00441420 /* Responses */,
+				6EAD08232A2611C200441420 /* DTOs */,
+				6EAD08252A2611C200441420 /* Helpers */,
+				6EAD082F2A261EB400441420 /* TopMusicService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		6EAD08232A2611C200441420 /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				6EAD08242A2611C200441420 /* Music.swift */,
+			);
+			path = DTOs;
+			sourceTree = "<group>";
+		};
+		6EAD08252A2611C200441420 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6EAD08262A2611C200441420 /* Decoders.swift */,
+				6EAD08312A261F4700441420 /* Result.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6EAD08292A261A4800441420 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				6EAD081B2A26117E00441420 /* Resources */,
+				6EAD07FA2A26112000441420 /* musicViperTests.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		6EAD082A2A261BBB00441420 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				6EAD082B2A261BD100441420 /* TopMusicResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		6EAD082E2A261E9E00441420 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		99087A43F79D491126BFB3BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5F1E9EB810920EB8FCCB9BA /* Pods-musicViper.debug.xcconfig */,
+				41EEE11817F117B691E67A40 /* Pods-musicViper.release.xcconfig */,
+				8B8855BD16AE497970242A20 /* Pods-musicViper-musicViperUITests.debug.xcconfig */,
+				AD21060E391DB5B62B9BE7BF /* Pods-musicViper-musicViperUITests.release.xcconfig */,
+				D0472D222822A1F4DB51A6DB /* Pods-musicViperTests.debug.xcconfig */,
+				4A3D507E1C066E1388C6C3AD /* Pods-musicViperTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6EAD07DF2A26111F00441420 /* musicViper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EAD080A2A26112000441420 /* Build configuration list for PBXNativeTarget "musicViper" */;
+			buildPhases = (
+				1F48825CC358D6AC70429A94 /* [CP] Check Pods Manifest.lock */,
+				6EAD07DC2A26111F00441420 /* Sources */,
+				6EAD07DD2A26111F00441420 /* Frameworks */,
+				6EAD07DE2A26111F00441420 /* Resources */,
+				7717B0C82CA631839B9C0E57 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = musicViper;
+			productName = musicViper;
+			productReference = 6EAD07E02A26111F00441420 /* musicViper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6EAD07F52A26112000441420 /* musicViperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EAD080D2A26112000441420 /* Build configuration list for PBXNativeTarget "musicViperTests" */;
+			buildPhases = (
+				5D4573A4CC4DFE7FDE0EC1D5 /* [CP] Check Pods Manifest.lock */,
+				6EAD07F22A26112000441420 /* Sources */,
+				6EAD07F32A26112000441420 /* Frameworks */,
+				6EAD07F42A26112000441420 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6EAD07F82A26112000441420 /* PBXTargetDependency */,
+			);
+			name = musicViperTests;
+			productName = musicViperTests;
+			productReference = 6EAD07F62A26112000441420 /* musicViperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6EAD07FF2A26112000441420 /* musicViperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EAD08102A26112000441420 /* Build configuration list for PBXNativeTarget "musicViperUITests" */;
+			buildPhases = (
+				E4A8E2B08880AB61CC68952B /* [CP] Check Pods Manifest.lock */,
+				6EAD07FC2A26112000441420 /* Sources */,
+				6EAD07FD2A26112000441420 /* Frameworks */,
+				6EAD07FE2A26112000441420 /* Resources */,
+				F5B87170E610B4A74F2C5FF6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6EAD08022A26112000441420 /* PBXTargetDependency */,
+			);
+			name = musicViperUITests;
+			productName = musicViperUITests;
+			productReference = 6EAD08002A26112000441420 /* musicViperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6EAD07D82A26111F00441420 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					6EAD07DF2A26111F00441420 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					6EAD07F52A26112000441420 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 6EAD07DF2A26111F00441420;
+					};
+					6EAD07FF2A26112000441420 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 6EAD07DF2A26111F00441420;
+					};
+				};
+			};
+			buildConfigurationList = 6EAD07DB2A26111F00441420 /* Build configuration list for PBXProject "musicViper" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6EAD07D72A26111F00441420;
+			productRefGroup = 6EAD07E12A26111F00441420 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6EAD07DF2A26111F00441420 /* musicViper */,
+				6EAD07F52A26112000441420 /* musicViperTests */,
+				6EAD07FF2A26112000441420 /* musicViperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6EAD07DE2A26111F00441420 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EAD07F02A26112000441420 /* LaunchScreen.storyboard in Resources */,
+				6EAD07ED2A26112000441420 /* Assets.xcassets in Resources */,
+				6EAD07EB2A26111F00441420 /* Main.storyboard in Resources */,
+				6EAD081E2A26117E00441420 /* music.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EAD07F42A26112000441420 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EAD081F2A26117E00441420 /* music.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EAD07FE2A26112000441420 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F48825CC358D6AC70429A94 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-musicViper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D4573A4CC4DFE7FDE0EC1D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-musicViperTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7717B0C82CA631839B9C0E57 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-musicViper/Pods-musicViper-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-musicViper/Pods-musicViper-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-musicViper/Pods-musicViper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4A8E2B08880AB61CC68952B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-musicViper-musicViperUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5B87170E610B4A74F2C5FF6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-musicViper-musicViperUITests/Pods-musicViper-musicViperUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-musicViper-musicViperUITests/Pods-musicViper-musicViperUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-musicViper-musicViperUITests/Pods-musicViper-musicViperUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6EAD07DC2A26111F00441420 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EAD08282A2611C200441420 /* Decoders.swift in Sources */,
+				6EAD07E82A26111F00441420 /* ViewController.swift in Sources */,
+				6EAD07E42A26111F00441420 /* AppDelegate.swift in Sources */,
+				6EAD08272A2611C200441420 /* Music.swift in Sources */,
+				6EAD082C2A261BD100441420 /* TopMusicResponse.swift in Sources */,
+				6EAD08302A261EB400441420 /* TopMusicService.swift in Sources */,
+				6EAD08322A261F4700441420 /* Result.swift in Sources */,
+				6EAD07E62A26111F00441420 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EAD07F22A26112000441420 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EAD07FB2A26112000441420 /* musicViperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EAD07FC2A26112000441420 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EAD08052A26112000441420 /* musicViperUITests.swift in Sources */,
+				6EAD08072A26112000441420 /* musicViperUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6EAD07F82A26112000441420 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6EAD07DF2A26111F00441420 /* musicViper */;
+			targetProxy = 6EAD07F72A26112000441420 /* PBXContainerItemProxy */;
+		};
+		6EAD08022A26112000441420 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6EAD07DF2A26111F00441420 /* musicViper */;
+			targetProxy = 6EAD08012A26112000441420 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6EAD07E92A26111F00441420 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6EAD07EA2A26111F00441420 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6EAD07EE2A26112000441420 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6EAD07EF2A26112000441420 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6EAD08082A26112000441420 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6EAD08092A26112000441420 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6EAD080B2A26112000441420 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5F1E9EB810920EB8FCCB9BA /* Pods-musicViper.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6RYG55F8TD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = musicViper/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kenanbylan.musicViper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6EAD080C2A26112000441420 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41EEE11817F117B691E67A40 /* Pods-musicViper.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6RYG55F8TD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = musicViper/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kenanbylan.musicViper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6EAD080E2A26112000441420 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0472D222822A1F4DB51A6DB /* Pods-musicViperTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6RYG55F8TD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kenanbylan.musicViperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/musicViper.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/musicViper";
+			};
+			name = Debug;
+		};
+		6EAD080F2A26112000441420 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A3D507E1C066E1388C6C3AD /* Pods-musicViperTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6RYG55F8TD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kenanbylan.musicViperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/musicViper.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/musicViper";
+			};
+			name = Release;
+		};
+		6EAD08112A26112000441420 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B8855BD16AE497970242A20 /* Pods-musicViper-musicViperUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6RYG55F8TD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kenanbylan.musicViperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = musicViper;
+			};
+			name = Debug;
+		};
+		6EAD08122A26112000441420 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD21060E391DB5B62B9BE7BF /* Pods-musicViper-musicViperUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6RYG55F8TD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kenanbylan.musicViperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = musicViper;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6EAD07DB2A26111F00441420 /* Build configuration list for PBXProject "musicViper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EAD08082A26112000441420 /* Debug */,
+				6EAD08092A26112000441420 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EAD080A2A26112000441420 /* Build configuration list for PBXNativeTarget "musicViper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EAD080B2A26112000441420 /* Debug */,
+				6EAD080C2A26112000441420 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EAD080D2A26112000441420 /* Build configuration list for PBXNativeTarget "musicViperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EAD080E2A26112000441420 /* Debug */,
+				6EAD080F2A26112000441420 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EAD08102A26112000441420 /* Build configuration list for PBXNativeTarget "musicViperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EAD08112A26112000441420 /* Debug */,
+				6EAD08122A26112000441420 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6EAD07D82A26111F00441420 /* Project object */;
+}

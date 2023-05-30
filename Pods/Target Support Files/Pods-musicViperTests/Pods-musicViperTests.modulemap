@@ -1,0 +1,6 @@
+framework module Pods_musicViperTests {
+  umbrella header "Pods-musicViperTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
