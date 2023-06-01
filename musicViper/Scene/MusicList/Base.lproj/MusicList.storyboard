@@ -45,10 +45,6 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="8bC-Xf-vdC" id="Xpf-Ch-5VQ"/>
-                                    <outlet property="delegate" destination="8bC-Xf-vdC" id="Z5k-sT-Diq"/>
-                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -59,12 +55,9 @@
                             <constraint firstItem="RYW-An-N6Q" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="g6n-v0-mIE"/>
                             <constraint firstItem="RYW-An-N6Q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vSI-jF-XvY"/>
                         </constraints>
-                        <connections>
-                            <outlet property="tableView" destination="RYW-An-N6Q" id="RvM-U1-Jej"/>
-                        </connections>
                     </view>
                     <connections>
-                        <outlet property="customView" destination="8bC-Xf-vdC" id="Lq0-3z-e1k"/>
+                        <outlet property="tableView" destination="RYW-An-N6Q" id="gGP-ni-npO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

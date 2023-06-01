@@ -20,9 +20,9 @@ public struct TopMusicResponse: Decodable {
     public let results: [Music]
     
     
-//    init(results: [Music]) {
-//        self.results = results
-//    }
+    init(results: [Music]) {
+        self.results = results
+    }
     
     public init(from decoder: Decoder) throws  {
         let rootContainer = try decoder.container(keyedBy: RootCodingKeys.self)

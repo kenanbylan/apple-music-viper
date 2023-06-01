@@ -11,45 +11,80 @@ import UIKit
 
 final class MusicListViewController: UIViewController {
     
-    @IBOutlet var customView: MusicListView! 
+  
+    @IBOutlet weak var tableView: UITableView!
     
+    var viewModel: MusicListViewModelProtocol! {
+        didSet {
+            viewModel.delegate = self
+        }
+
+    }
+    private var musicList: [MusicPresentation] = []
     
-    var service: TopMusicServiceProtocol = TopMusicService()
-    private var musicList: [Music] = []
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Musics"
         
-        customView.setLoading(true)
+        viewModel.load()
         
-        service.fetchTopMovies { [weak self] result in
-            
-            guard let `self` = self else { return }
-            
-            switch result {
-            case .success(let value):
-                self.musicList = value.results
-                let musicPresentations = value.results.map(MusicPresentation.init)
-                print("musicPresentations: ", musicPresentations)
-                self.customView.updateMusicList(musicPresentations)
-                
-            case .failure(let error):
-                print("Error:" ,error)
-            }
-            
-            self.customView.setLoading(false)
-        }
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        
+        
+        
     }
 }
 
 
-extension MusicListViewController: MusicListViewDelegate {
-    func didSelectMusic(at index: Int) {
-        let music = musicList[index]
-        
+extension MusicListViewController: MusicListViewModelDelegate {
+    
+    
+    func handleViewModelOutput(_ output: MusicListViewModelOutput) {
+        switch output {
+            
+        case .updateTitle(let title):
+            self.title = title
+        case .setLoading(let isLoading):
+            UIApplication.shared.isNetworkActivityIndicatorVisible = isLoading
+        case .showMusicList(let musicList):
+            self.musicList = musicList
+            tableView.reloadData()
+        }
         
     }
+    
+    
+    
+}
+
+
+extension MusicListViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return musicList.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MusicListCell", for: indexPath) as! UITableViewCell
+        
+        cell.textLabel?.text = musicList[indexPath.row].title
+        cell.detailTextLabel?.text = musicList[indexPath.row].detail
+        return cell
+        
+    }
+    
+    
+}
+
+
+extension MusicListViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
+    
+    
 }

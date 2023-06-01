@@ -11,19 +11,58 @@ import XCTest
 
 final class musicViperTests: XCTestCase {
     
-    func testExample() throws {
-        
-        let bundle = Bundle(for: musicViperTests.self)
-        let url = bundle.url(forResource: "music", withExtension: "json")!
-        let data = try Data(contentsOf: url)
-        let decoder = Decoders.plainDateDecoder
-        let music = try decoder.decode(Music.self, from: data)
+    private var viewModel: MusicListViewModel!
+    private var view: MockView!
+    private var service: MockTopMusicService!
     
-        XCTAssertEqual(music.artistName, "Lil Durk")
-        XCTAssertEqual(music.name,"Almost Healed")
-        XCTAssertEqual(music.genres.count,2)
-        XCTAssertEqual(music.genres.first?.name,"Music")
+    
+    override  func setUp() {
+        service = MockTopMusicService()
+        viewModel = MusicListViewModel(service: service)
+        view = MockView()
+        viewModel.delegate = view
         
+    }
+    
+    
+    func testLoad() throws {
+        // Given:
+        let music1 = try ResourceLoader.loadMusic(resource: .music1)
+        let music2 = try ResourceLoader.loadMusic(resource: .music2)
+        service.musics = [music1,music2]
+    
+        //When:
+        viewModel.load()
+        
+        XCTAssertEqual(try view.outputs.count, 4)
+        
+        
+        //Then:
+        switch  try view.outputs.element(at: 0) {
+        case .updateTitle(_):
+            break //Success!
+            
+        default:
+            XCTFail("Fist output should be 'updateTitle'. ")
+        }
+        
+        XCTAssertEqual(try view.outputs.element(at: 1) , .setLoading(true))
+        XCTAssertEqual(try view.outputs.element(at: 2) , .setLoading(false))
+        
+        let expectedMusic = [music1,music2].map({ MusicPresentation(music: $0)})
+        XCTAssertEqual(try view.outputs.element(at: 2) , .showMusicList(expectedMusic))
+        
+    }
+    
+}
+
+
+private class MockView: MusicListViewModelDelegate {
+    
+    var outputs: [MusicListViewModelOutput] = []
+    
+    func handleViewModelOutput(_ output: musicViper.MusicListViewModelOutput) {
+        outputs.append(output)
     }
     
 }

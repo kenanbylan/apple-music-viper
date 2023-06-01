@@ -1,11 +1,12 @@
 //
-//  MusicPresentation.swift
+//  MusicListPresentation.swift
 //  musicViper
 //
-//  Created by Kenan Baylan on 31.05.2023.
+//  Created by Kenan Baylan on 2.06.2023.
 //
 
 import Foundation
+
 
 struct MusicPresentation {
     
@@ -27,5 +28,3 @@ extension MusicPresentation {
         self.init(title: music.name, detail: music.artistName)
     }
 }
-
-    
