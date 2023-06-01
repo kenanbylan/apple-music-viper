@@ -17,7 +17,12 @@ public struct TopMusicResponse: Decodable {
         case results
     }
     
-    let results: [Music]
+    public let results: [Music]
+    
+    
+//    init(results: [Music]) {
+//        self.results = results
+//    }
     
     public init(from decoder: Decoder) throws  {
         let rootContainer = try decoder.container(keyedBy: RootCodingKeys.self)

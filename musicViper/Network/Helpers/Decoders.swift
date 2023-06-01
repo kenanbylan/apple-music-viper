@@ -10,15 +10,13 @@ public enum Decoders {
 
 //    2023-05-26
     static let plainDateDecoder: JSONDecoder = {
-        
         let decoder = JSONDecoder()
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
         decoder.dateDecodingStrategy = .formatted(dateFormatter)
-        
         return decoder
-        
     }()
+    
 }
 
 
