@@ -12,7 +12,7 @@ final class MockTopMusicService: TopMusicServiceProtocol {
     
     var musics: [Music] = []
     
-    func fetchTopMovies(completion: @escaping (Result<TopMusicResponse>) -> Void) {
+    func fetchTopMusic(completion: @escaping (Result<TopMusicResponse>) -> Void) {
         completion(.success(TopMusicResponse(results: musics)))
     }
     

@@ -10,7 +10,7 @@ import Alamofire
 //Faydası servis için test yazılacak olursa faydası olur.
 
 public protocol TopMusicServiceProtocol {
-    func fetchTopMovies(completion: @escaping (Result<TopMusicResponse>) -> Void)
+    func fetchTopMusic(completion: @escaping (Result<TopMusicResponse>) -> Void)
 }
 
 
@@ -25,7 +25,7 @@ public class TopMusicService: TopMusicServiceProtocol {
     
     
     
-    public func fetchTopMovies(completion: @escaping (Result<TopMusicResponse>) -> Void) {
+    public func fetchTopMusic(completion: @escaping (Result<TopMusicResponse>) -> Void) {
         
         let urlString = "https://rss.applemarketingtools.com/api/v2/us/music/most-played/25/albums.json"
         

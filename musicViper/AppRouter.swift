@@ -17,7 +17,9 @@ final class AppRouter {
     }
     
     func start() {
-        let viewController = MusicListBuilder.make()
+        let viewController = UIViewController()
+        viewController.view.backgroundColor = .blue
+        viewController.title = "Replace me"
         let navigationController = UINavigationController(rootViewController: viewController)
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
